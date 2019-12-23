@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-blue-400">
     <img alt="Vue logo" src="./assets/logo.png" />
     <!-- Componente HelloWorld -->
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -14,7 +14,7 @@ import HelloWorld from "./components/HelloWorld.vue"; //Se importa el componente
 export default {
   name: "app",
   //Se importa el componente donde se quiere usar y declararlo dentro de la propiedad componentes en el componente padre para decirle que esta disponible para ser utilizado
-  components: { 
+  components: {
     HelloWorld
   }
 };
