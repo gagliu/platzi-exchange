@@ -89,6 +89,7 @@
 <script>
 export default {
   name: "HelloWorld",
+  //props permite indicar el nombre de la propiedad y el tipo de dato
   props: {
     msg: String
   }
@@ -96,6 +97,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+Scoped permite que estos estilos se apliquen solamente al componente HelloWorld
 <style scoped>
 h3 {
   margin: 40px 0 0;
