@@ -1,22 +1,22 @@
 <template>
-  <div id="app" class="bg-blue-400">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <!-- Componente HelloWorld -->
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <main>
+    <px-header />
+    <!-- Este componente lo provee el vue router
+    Permite establecer el html que se va reemplazar a medida que se cambia la ruta -->
+    <router-view class="container px-5 sm:px-20 py-20 flex justify-center" />
+  </main>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue"; //Se importa el componente HelloWorld
+import PxHeader from "@/components/PxHeader";
+//import PxAssetsTable from "@/components/PxAssetsTable";
 
 //Es la misma configuracion que se realizaba para crear una instancia o componente
 //name permite asignar un nombre para el componente
 export default {
   name: "app",
   //Se importa el componente donde se quiere usar y declararlo dentro de la propiedad componentes en el componente padre para decirle que esta disponible para ser utilizado
-  components: {
-    HelloWorld
-  }
+  components: { PxHeader }
 };
 </script>
 
