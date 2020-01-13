@@ -5,6 +5,10 @@ import "@/assets/css/tailwind.css";
 //@ truco de webpack y vue para hacer referencia de manera RELATIVA al directorio src
 //hace referencia al directorio source (src)
 import router from "@/router";
+import { dollarFilter, percentFilter } from "@/filters";
+
+Vue.filter("dollar", dollarFilter);
+Vue.filter("percent", percentFilter);
 
 Vue.config.productionTip = false;
 
